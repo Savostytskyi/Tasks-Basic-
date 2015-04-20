@@ -1,10 +1,10 @@
-import java.util.Arrays;
+п»їimport java.util.Arrays;
 import java.util.Scanner;
 public class TaskFirst {
 
 	public static void main(String[] args) {
 		
-        System.out.println("Выберите подзадачу (введите число от 1 до 6):");
+        System.out.println("Р’С‹Р±РµСЂРёС‚Рµ РїРѕРґР·Р°РґР°С‡Сѓ (РІРІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РѕС‚ 1 РґРѕ 6):");
         try {
         Scanner start = new Scanner(System.in);
 		int st =start.nextInt();
@@ -12,30 +12,30 @@ public class TaskFirst {
 		
 	    switch(st) {
 	      case 1:
-	    	  sayHello (args[0]);  	// 1. Приветствовать любого пользователя при вводе его имени через командную строку.
+	    	  sayHello (args[0]);  	// 1. РџСЂРёРІРµС‚СЃС‚РІРѕРІР°С‚СЊ Р»СЋР±РѕРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РїСЂРё РІРІРѕРґРµ РµРіРѕ РёРјРµРЅРё С‡РµСЂРµР· РєРѕРјР°РЅРґРЅСѓСЋ СЃС‚СЂРѕРєСѓ.
 	        break;
 	      case 2: 
-	    	  reverse(args);  		//  2. Отобразить в окне консоли аргументы командной строки в обратном порядке.
+	    	  reverse(args);  		//  2. РћС‚РѕР±СЂР°Р·РёС‚СЊ РІ РѕРєРЅРµ РєРѕРЅСЃРѕР»Рё Р°СЂРіСѓРјРµРЅС‚С‹ РєРѕРјР°РЅРґРЅРѕР№ СЃС‚СЂРѕРєРё РІ РѕР±СЂР°С‚РЅРѕРј РїРѕСЂСЏРґРєРµ.
 	        break;
 	      case 3:
-	    	  randMass();   		//  3. Вывести заданное количество случайных чисел с переходом и без перехода на новую строку.
+	    	  randMass();   		//  3. Р’С‹РІРµСЃС‚Рё Р·Р°РґР°РЅРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃР»СѓС‡Р°Р№РЅС‹С… С‡РёСЃРµР» СЃ РїРµСЂРµС…РѕРґРѕРј Рё Р±РµР· РїРµСЂРµС…РѕРґР° РЅР° РЅРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ.
 	        break;
 	      case 4:
-	    	  strEquals(); 			//  4. Ввести пароль из командной строки и сравнить его со строкой-образцом.
+	    	  strEquals(); 			//  4. Р’РІРµСЃС‚Рё РїР°СЂРѕР»СЊ РёР· РєРѕРјР°РЅРґРЅРѕР№ СЃС‚СЂРѕРєРё Рё СЃСЂР°РІРЅРёС‚СЊ РµРіРѕ СЃРѕ СЃС‚СЂРѕРєРѕР№-РѕР±СЂР°Р·С†РѕРј.
 		        break;
 	      case 5:
-	    	  multiple(args);   	//  5. Ввести целые числа как аргументы командной строки, подсчитать их суммы (произведения) и вывести результат на консоль.
+	    	  multiple(args);   	//  5. Р’РІРµСЃС‚Рё С†РµР»С‹Рµ С‡РёСЃР»Р° РєР°Рє Р°СЂРіСѓРјРµРЅС‚С‹ РєРѕРјР°РЅРґРЅРѕР№ СЃС‚СЂРѕРєРё, РїРѕРґСЃС‡РёС‚Р°С‚СЊ РёС… СЃСѓРјРјС‹ (РїСЂРѕРёР·РІРµРґРµРЅРёСЏ) Рё РІС‹РІРµСЃС‚Рё СЂРµР·СѓР»СЊС‚Р°С‚ РЅР° РєРѕРЅСЃРѕР»СЊ.
 		        break;
 	      case 6:
-	    	  intNums(); 			//  6. Работа с массивом. Ввести с консоли n целых чисел. На консоль вывести......
+	    	  intNums(); 			//  6. Р Р°Р±РѕС‚Р° СЃ РјР°СЃСЃРёРІРѕРј. Р’РІРµСЃС‚Рё СЃ РєРѕРЅСЃРѕР»Рё n С†РµР»С‹С… С‡РёСЃРµР». РќР° РєРѕРЅСЃРѕР»СЊ РІС‹РІРµСЃС‚Рё......
 	    	
 		        break;
 	      default: 
-	        System.out.println("Такой подзадачи не существует!");
+	        System.out.println("РўР°РєРѕР№ РїРѕРґР·Р°РґР°С‡Рё РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!");
 	        break;
 	    }	
         }catch (Exception ex) {
-			System.out.println("Неверный ввод!");
+			System.out.println("РќРµРІРµСЂРЅС‹Р№ РІРІРѕРґ!");
 			
 		}
 		
@@ -43,7 +43,7 @@ public class TaskFirst {
 	}
 	
 	private static void sayHello( String name ) {
-		System.out.println("Привет " + name + " !!!");
+		System.out.println("РџСЂРёРІРµС‚ " + name + " !!!");
 	}
 	
 	private static void reverse( String[] params ) {
@@ -57,11 +57,11 @@ public class TaskFirst {
 		
 	public static void randMass() {
 		int n;
-			System.out.println("\nВведите количество элементов массива: ");
+			System.out.println("\nР’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: ");
 			Scanner scn = new Scanner(System.in);
 		try {
 			n = Integer.parseInt(scn.next());
-			if (n<=0) {System.out.println("\nНедопустимая длинна масива! Попробуйте заново");
+			if (n<=0) {System.out.println("\nРќРµРґРѕРїСѓСЃС‚РёРјР°СЏ РґР»РёРЅРЅР° РјР°СЃРёРІР°! РџРѕРїСЂРѕР±СѓР№С‚Рµ Р·Р°РЅРѕРІРѕ");
 			randMass();}
 			else {
 			int[] mass = new int [n];
@@ -74,7 +74,7 @@ public class TaskFirst {
 			}
 			}
 		}catch (Exception ex) {
-			System.out.println("Неверный тип данных! Попробуйте заново");
+			System.out.println("РќРµРІРµСЂРЅС‹Р№ С‚РёРї РґР°РЅРЅС‹С…! РџРѕРїСЂРѕР±СѓР№С‚Рµ Р·Р°РЅРѕРІРѕ");
 			randMass();
 			
 		}
@@ -84,13 +84,13 @@ public class TaskFirst {
 	public static void strEquals() {
 		String pass = "Admin";
 	    String inpPass;
-	    System.out.println("\nВведите пароль: ");
+	    System.out.println("\nР’РІРµРґРёС‚Рµ РїР°СЂРѕР»СЊ: ");
 	    Scanner scn1 = new Scanner(System.in);
 	    inpPass = scn1.next();
 		if(pass.equals(inpPass)) {
-			System.out.println("Пароль правильный! Ура!");
+			System.out.println("РџР°СЂРѕР»СЊ РїСЂР°РІРёР»СЊРЅС‹Р№! РЈСЂР°!");
 		} else {
-			System.out.println("Вы ввели неверный пароль попробуйте еще раз");
+			System.out.println("Р’С‹ РІРІРµР»Рё РЅРµРІРµСЂРЅС‹Р№ РїР°СЂРѕР»СЊ РїРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰Рµ СЂР°Р·");
 			strEquals();
 		}
 	}
@@ -101,20 +101,20 @@ public class TaskFirst {
 			sum = sum + Integer.parseInt(mathExec[i]);
 			multiple = multiple * Integer.parseInt(mathExec[i]);
 		}
-		System.out.println("Сумма элементов: "+ sum);
-		System.out.println("Произведение элементов: "+ multiple);
+		System.out.println("РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ: "+ sum);
+		System.out.println("РџСЂРѕРёР·РІРµРґРµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ: "+ multiple);
 	}
 
 	public static void intNums() {
 		int m=0;
 		
-		System.out.println("\nВведите количество элементов: ");
+		System.out.println("\nР’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ: ");
 		Scanner scn2 = new Scanner(System.in);
 		m =scn2.nextInt();
 		int intMass[] = new int[m];
 		
 		if (m!=0) {
-		System.out.println("\nВведите элементы массива: ");
+		System.out.println("\nР’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР°: ");
 		Scanner scn3 = new Scanner(System.in);		
 		for (int i = 0; i < intMass.length; i++) {
 			intMass[i] = scn3.nextInt();		
@@ -127,7 +127,7 @@ public class TaskFirst {
 		diffNumb(intMass);
 		goodNums(intMass); 
 		halfSum(intMass);}
-		else System.out.println("Слишком короткий массив!");
+		else System.out.println("РЎР»РёС€РєРѕРј РєРѕСЂРѕС‚РєРёР№ РјР°СЃСЃРёРІ!");
 	}
 	
 	public static void evenOdd(int[] intMass) {
@@ -149,8 +149,8 @@ public class TaskFirst {
         	}
         	
         }
-        System.out.println("Нечетные элементы: "+Arrays.toString(odd));
-        System.out.println("Четные элементы: "+Arrays.toString(even));
+        System.out.println("РќРµС‡РµС‚РЅС‹Рµ СЌР»РµРјРµРЅС‚С‹: "+Arrays.toString(odd));
+        System.out.println("Р§РµС‚РЅС‹Рµ СЌР»РµРјРµРЅС‚С‹: "+Arrays.toString(even));
 	}
 
 	public static void maxMin(int[] intMass) {
@@ -165,37 +165,37 @@ public class TaskFirst {
         	};
 
 	}
-		System.out.println("Минимальный элемент: "+min+ "\nМаксимальный элемент: "+max);
+		System.out.println("РњРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚: "+min+ "\nРњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚: "+max);
 }
 
 	public static void devidByThree(int[] intMass) {
 		
-		System.out.print("Числа которые делятся на 3 или 9: ");
+		System.out.print("Р§РёСЃР»Р° РєРѕС‚РѕСЂС‹Рµ РґРµР»СЏС‚СЃСЏ РЅР° 3 РёР»Рё 9: ");
 		int counter=0;
 		for(int k : intMass) {
         	if ((k%3==0) || (k%9==0)) {
         			System.out.print(k+" ");
         	counter++;}
 		}
-			if (counter==0) System.out.print(" таких чисел нет!");
+			if (counter==0) System.out.print(" С‚Р°РєРёС… С‡РёСЃРµР» РЅРµС‚!");
 			System.out.println("");
 	}
 
 	public static void devidByFive(int[] intMass) {
 		
-		System.out.print("Числа которые делятся на 5 и 7: ");
+		System.out.print("Р§РёСЃР»Р° РєРѕС‚РѕСЂС‹Рµ РґРµР»СЏС‚СЃСЏ РЅР° 5 Рё 7: ");
 		int counter=0;
 		for(int k : intMass) {
         	if ((k%5==0) && (k%7==0)) {
         			System.out.print(k+" ");
         	counter++;}
 		}
-			if (counter==0) System.out.print(" таких чисел нет!");
+			if (counter==0) System.out.print(" С‚Р°РєРёС… С‡РёСЃРµР» РЅРµС‚!");
 	}
 	
 	public static void diffNumb(int[] intMass) {
 		String arrVal,elem;
-System.out.print("\nЧисла без одинаковых цифр: ");
+System.out.print("\nР§РёСЃР»Р° Р±РµР· РѕРґРёРЅР°РєРѕРІС‹С… С†РёС„СЂ: ");
 int counter = 0;
 		for(int k : intMass) {
 			int m=0;
@@ -217,13 +217,13 @@ int counter = 0;
 			
 			
 		}
-		if (counter==0) System.out.print(" таких чисел нет!");
+		if (counter==0) System.out.print(" С‚Р°РєРёС… С‡РёСЃРµР» РЅРµС‚!");
 	}
 
 	public static void goodNums(int[] intMass) {
 		String arrVal;
 		int res1, res2, r, counter;
-		System.out.print("\nСчастливые числа: ");
+		System.out.print("\nРЎС‡Р°СЃС‚Р»РёРІС‹Рµ С‡РёСЃР»Р°: ");
 		for(int k : intMass) {
 			arrVal = Integer.toString(k);
 			res1=0;
@@ -249,7 +249,7 @@ int counter = 0;
 }
 
 	public static void halfSum(int[] intMass) {
-		System.out.print("\nЧисла равные полусумме: ");
+		System.out.print("\nР§РёСЃР»Р° СЂР°РІРЅС‹Рµ РїРѕР»СѓСЃСѓРјРјРµ: ");
 		for(int i=1; i<intMass.length-1; i++) {
 			if ( ((intMass[i-1]+intMass[i+1])%2==0) && (intMass[i]== (intMass[i-1]+intMass[i+1])/2)) System.out.print(" "+intMass[i]);
 		}

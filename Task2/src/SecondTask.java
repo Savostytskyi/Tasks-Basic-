@@ -1,4 +1,4 @@
-import java.util.Arrays;
+п»їimport java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -8,7 +8,7 @@ public class SecondTask {
 
 		 
 		try {
-		  System.out.println("Выберите одно из подзаданий (1: массивы; 2: вывод матрицы, 3: преобразования матриц):");	   
+		  System.out.println("Р’С‹Р±РµСЂРёС‚Рµ РѕРґРЅРѕ РёР· РїРѕРґР·Р°РґР°РЅРёР№ (1: РјР°СЃСЃРёРІС‹; 2: РІС‹РІРѕРґ РјР°С‚СЂРёС†С‹, 3: РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ РјР°С‚СЂРёС†):");	   
 	        Scanner start = new Scanner(System.in);
 			int st =start.nextInt();
 						
@@ -23,12 +23,12 @@ public class SecondTask {
 		    	  inpMatrix();
 		        break;
 		      default: 
-		        System.out.println("Такой подзадачи не существует!");
+		        System.out.println("РўР°РєРѕР№ РїРѕРґР·Р°РґР°С‡Рё РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!");
 		        main(args);
 		        break;
 		    }	
 		}catch (Exception ex) {
-			System.out.println("Неверный ввод!");
+			System.out.println("РќРµРІРµСЂРЅС‹Р№ РІРІРѕРґ!");
 			main(args);
 		}
 	}
@@ -36,13 +36,13 @@ public class SecondTask {
 	public static void intNums() {
 		int m=0;
 		
-		System.out.println("Введите количество элементов: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ: ");
 		Scanner scn2 = new Scanner(System.in);
 		m =scn2.nextInt();
 		int intMass[] = new int[m];
 		
 		if (m!=0) {
-		System.out.println("\nВведите элементы массива: ");
+		System.out.println("\nР’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР°: ");
 		Scanner scn3 = new Scanner(System.in);		
 		for (int i = 0; i < intMass.length; i++) {
 			intMass[i] = scn3.nextInt();		
@@ -57,7 +57,7 @@ public class SecondTask {
 		higherNums(intMass);
 		
 		}
-		else {System.out.println("Слишком короткий массив!");
+		else {System.out.println("РЎР»РёС€РєРѕРј РєРѕСЂРѕС‚РєРёР№ РјР°СЃСЃРёРІ!");
 		intNums();}
 	}
 	
@@ -79,8 +79,8 @@ public class SecondTask {
 			}
 				
 		}
-		System.out.println("Наименьшее по длинне число: "+tmpElem+" размерность: "+tmp_lng+ " символов");
-		System.out.println("Наибольшее по длинне число: "+tmpElemMax+" размерность: "+tmp_lngmax+ " символов");
+		System.out.println("РќР°РёРјРµРЅСЊС€РµРµ РїРѕ РґР»РёРЅРЅРµ С‡РёСЃР»Рѕ: "+tmpElem+" СЂР°Р·РјРµСЂРЅРѕСЃС‚СЊ: "+tmp_lng+ " СЃРёРјРІРѕР»РѕРІ");
+		System.out.println("РќР°РёР±РѕР»СЊС€РµРµ РїРѕ РґР»РёРЅРЅРµ С‡РёСЃР»Рѕ: "+tmpElemMax+" СЂР°Р·РјРµСЂРЅРѕСЃС‚СЊ: "+tmp_lngmax+ " СЃРёРјРІРѕР»РѕРІ");
 }
 	
 	public static void lenSort(int[] intMass) {
@@ -100,7 +100,7 @@ public class SecondTask {
  	        }
  	    }
  	
- 	  	System.out.println("Сортировка по длинне элементов: "+Arrays.toString(newMass));
+ 	  	System.out.println("РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ РґР»РёРЅРЅРµ СЌР»РµРјРµРЅС‚РѕРІ: "+Arrays.toString(newMass));
  	   for (i = 0; i < newMass.length-1; i++){
 	        for (int j = i+1; j < newMass.length; j++){
 	            if (newMass[i].length() < newMass[j].length()) {
@@ -110,7 +110,7 @@ public class SecondTask {
 	            }
 	        }
 	    }
- 	  	System.out.println("Сортировка по длинне элементов (в обратном порядке): "+Arrays.toString(newMass));
+ 	  	System.out.println("РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ РґР»РёРЅРЅРµ СЌР»РµРјРµРЅС‚РѕРІ (РІ РѕР±СЂР°С‚РЅРѕРј РїРѕСЂСЏРґРєРµ): "+Arrays.toString(newMass));
 	}
 
 	public static void avgLength(int[] intMass) {
@@ -124,12 +124,12 @@ public class SecondTask {
 		len=len/intMass.length;
 		for(int k : intMass) {
 			arrVal = Integer.toString(k);
-			if (arrVal.length()<len) less=less+" "+arrVal+" длинна: "+arrVal.length()+"; ";
+			if (arrVal.length()<len) less=less+" "+arrVal+" РґР»РёРЅРЅР°: "+arrVal.length()+"; ";
 				
-			else if (arrVal.length()>len) more=more+" "+arrVal+" длинна: "+arrVal.length()+"; ";
+			else if (arrVal.length()>len) more=more+" "+arrVal+" РґР»РёРЅРЅР°: "+arrVal.length()+"; ";
 		}
-		System.out.println("Элементы меньше средней длинны: "+less);
-		System.out.println("Элементы больше средней длинны: "+more);
+		System.out.println("Р­Р»РµРјРµРЅС‚С‹ РјРµРЅСЊС€Рµ СЃСЂРµРґРЅРµР№ РґР»РёРЅРЅС‹: "+less);
+		System.out.println("Р­Р»РµРјРµРЅС‚С‹ Р±РѕР»СЊС€Рµ СЃСЂРµРґРЅРµР№ РґР»РёРЅРЅС‹: "+more);
 	}
 
 	public static void noDiffNumb(int[] intMass) {
@@ -156,13 +156,13 @@ public class SecondTask {
 			}
 			
 		}
-		System.out.println("Число с минимальным колличеством различных цифр: "+intMass[j]);
+		System.out.println("Р§РёСЃР»Рѕ СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј РєРѕР»Р»РёС‡РµСЃС‚РІРѕРј СЂР°Р·Р»РёС‡РЅС‹С… С†РёС„СЂ: "+intMass[j]);
 	}
 
 	public static void oddNums(int[] intMass) {
 		String arrVal;
 		int res1, res2, r;
-		System.out.print("\nЧисла с одинаковым количеством odd и even цифр: ");
+		System.out.print("\nР§РёСЃР»Р° СЃ РѕРґРёРЅР°РєРѕРІС‹Рј РєРѕР»РёС‡РµСЃС‚РІРѕРј odd Рё even С†РёС„СЂ: ");
 		for(int k : intMass) {
 			arrVal = Integer.toString(k);
 			res1=0;
@@ -188,7 +188,7 @@ public class SecondTask {
 	public static void higherNums(int[] intMass) {
 		String arrVal;
 		int res1, r, k, counter;
-		System.out.print("\nЧисло с цифрами по возрастанию: ");
+		System.out.print("\nР§РёСЃР»Рѕ СЃ С†РёС„СЂР°РјРё РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ: ");
 		
 			for (int i = 0; i < intMass.length; i++) {
 				
@@ -218,7 +218,7 @@ public class SecondTask {
 
 	public static void diffNumb(int[] intMass) {
 		String arrVal,elem;
-		System.out.print("\nЧисла без одинаковых цифр: ");
+		System.out.print("\nР§РёСЃР»Р° Р±РµР· РѕРґРёРЅР°РєРѕРІС‹С… С†РёС„СЂ: ");
 		int i;
 		for (i = 0; i < intMass.length; i++){
 
@@ -241,7 +241,7 @@ public class SecondTask {
 	}
 
 	public static void matrixOutPut() {
-		 System.out.println("Выберите размерность матрицы:");	   
+		 System.out.println("Р’С‹Р±РµСЂРёС‚Рµ СЂР°Р·РјРµСЂРЅРѕСЃС‚СЊ РјР°С‚СЂРёС†С‹:");	   
 	        Scanner scn = new Scanner(System.in);
 			int n =scn.nextInt();
 			int k=1;
@@ -271,7 +271,7 @@ public class SecondTask {
 
 	
 	public static void inpMatrix() {
-		 System.out.println("Выберите размерность матрицы:");	   
+		 System.out.println("Р’С‹Р±РµСЂРёС‚Рµ СЂР°Р·РјРµСЂРЅРѕСЃС‚СЊ РјР°С‚СЂРёС†С‹:");	   
 	        Scanner scn = new Scanner(System.in);
 			int n =scn.nextInt();
 			
@@ -298,39 +298,39 @@ public class SecondTask {
 			}
 			
 			
-			System.out.println("----------Сортировка по строкам----------");
+			System.out.println("----------РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ СЃС‚СЂРѕРєР°Рј----------");
 				sortByRow(mass);
-			System.out.println("----------Сортировка по столбцам----------");
+			System.out.println("----------РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ СЃС‚РѕР»Р±С†Р°Рј----------");
 				sortByCol(mass);
-			System.out.println("----------Сдвиг вниз----------");
+			System.out.println("----------РЎРґРІРёРі РІРЅРёР·----------");
 				moveDown(mass, 7);
-			System.out.println("----------Сдвиг ввверх----------");
+			System.out.println("----------РЎРґРІРёРі РІРІРІРµСЂС…----------");
 				moveUp(mass, 2);
-			System.out.println("----------Сдвиг вправо----------");
+			System.out.println("----------РЎРґРІРёРі РІРїСЂР°РІРѕ----------");
 				moveRight(mass, 2);
-			System.out.println("----------Сдвиг влево----------");
+			System.out.println("----------РЎРґРІРёРі РІР»РµРІРѕ----------");
 				moveRight(mass, 2);
-			System.out.println("----------Последовательность возрастающих элементов----------");
+			System.out.println("----------РџРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РІРѕР·СЂР°СЃС‚Р°СЋС‰РёС… СЌР»РµРјРµРЅС‚РѕРІ----------");
 				elemsSummHigh(mass);
-			System.out.println("----------Последовательность убывающих элементов----------");
+			System.out.println("----------РџРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СѓР±С‹РІР°СЋС‰РёС… СЌР»РµРјРµРЅС‚РѕРІ----------");
 				elemsSummLow(mass);
-			System.out.println("----------Cуммы между положительными элементами----------");
+			System.out.println("----------CСѓРјРјС‹ РјРµР¶РґСѓ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹РјРё СЌР»РµРјРµРЅС‚Р°РјРё----------");
 				elemsSummBetween(n);
-			System.out.println("----------Поворот матрицы----------");
-			System.out.println("ДО:");
+			System.out.println("----------РџРѕРІРѕСЂРѕС‚ РјР°С‚СЂРёС†С‹----------");
+			System.out.println("Р”Рћ:");
 			  for (int i = 0; i < mass.length; i++) {
 					for (int  j = 0; j < mass.length; j++)
 						System.out.print(mass[i][j]+ "  ");
 						System.out.println();		
 				}
-			  System.out.println("Поворот на 90 градусов:");
+			  System.out.println("РџРѕРІРѕСЂРѕС‚ РЅР° 90 РіСЂР°РґСѓСЃРѕРІ:");
 				rotation(mass);
-				  System.out.println("Поворот на 180 градусов:");
+				  System.out.println("РџРѕРІРѕСЂРѕС‚ РЅР° 180 РіСЂР°РґСѓСЃРѕРІ:");
 					rotation(mass);
-					  System.out.println("Поворот на 270 градусов:");
+					  System.out.println("РџРѕРІРѕСЂРѕС‚ РЅР° 270 РіСЂР°РґСѓСЃРѕРІ:");
 						rotation(mass);
-			System.out.println("----------Матрица минус среднее арифметическое----------");	
-			System.out.println("ДО:");
+			System.out.println("----------РњР°С‚СЂРёС†Р° РјРёРЅСѓСЃ СЃСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ----------");	
+			System.out.println("Р”Рћ:");
 			for (int i = 0; i < mass1.length; i++) {
 				for (int j = 0; j < mass1.length; j++)
 					System.out.print(mass1[i][j]+ "  ");
@@ -341,7 +341,7 @@ public class SecondTask {
 						subtrAvg(mass1);
 						
 						compress();
-						System.out.println("----------Матрица c нулями в конце----------");
+						System.out.println("----------РњР°С‚СЂРёС†Р° c РЅСѓР»СЏРјРё РІ РєРѕРЅС†Рµ----------");
 						zeroS(mass);
 						
 						
@@ -549,7 +549,7 @@ public class SecondTask {
 								summ=summ+mass[i][x];
 							}
 							else {
-								System.out.println("Сумма в "+i+" строке: "+summ);
+								System.out.println("РЎСѓРјРјР° РІ "+i+" СЃС‚СЂРѕРєРµ: "+summ);
 								continue label1;
 							}
 						}
@@ -599,7 +599,7 @@ public class SecondTask {
 			}
 		}
 		 double avg= summa/(n*n);
-		 System.out.println("ПОСЛЕ:");
+		 System.out.println("РџРћРЎР›Р•:");
 		  for (int i = 0; i < mass.length; i++) {
 				for (int  j = 0; j < mass.length; j++){
 					mass[i][j]=mass[i][j]-avg;
@@ -615,7 +615,7 @@ public class SecondTask {
 
 	 public static void compress() {
 
-	        System.out.println("-----Матрица до сжатия-----");
+	        System.out.println("-----РњР°С‚СЂРёС†Р° РґРѕ СЃР¶Р°С‚РёСЏ-----");
 	        int[][] nullArr = {
 					 {1,6,0,6,3},
 					 {0,0,0,0,0},
@@ -669,7 +669,7 @@ public class SecondTask {
 	                i1++;
 	            }
 	        }
-	        System.out.println("-----Сжатая матрица-----");
+	        System.out.println("-----РЎР¶Р°С‚Р°СЏ РјР°С‚СЂРёС†Р°-----");
 	        System.out.println(Arrays.deepToString(result));
 	    }
 	 

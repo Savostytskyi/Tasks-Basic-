@@ -1,4 +1,4 @@
-import java.util.Arrays;
+п»їimport java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -8,38 +8,38 @@ public class Labs {
 		
         int n,arr[], arrRand[];
         Scanner in = new Scanner(System.in);
-        System.out.print("Введите размер массива: ");
+        System.out.print("Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР°: ");
         n = in.nextInt();
         arr = new int [n];
         arrRand = new int [n];
         for (int i=0;i<arr.length;i++) {
         		arrRand[i] = (int) ( Math.random() * n);        		
 				arr[i] = i;}
-        System.out.println("Исходный массив: "+Arrays.toString(arr));
+        System.out.println("РСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ: "+Arrays.toString(arr));
         
         
     	ArrayInverter a = new ArrayInverter();
-		System.out.println("Инвертированный массив: "+Arrays.toString(a.invert(arr)));
+		System.out.println("РРЅРІРµСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ: "+Arrays.toString(a.invert(arr)));
 		
 		Merger mrg = new Merger();
-		System.out.println("Слитый массив: "+Arrays.toString(mrg.merge(arr, arrRand)));
+		System.out.println("РЎР»РёС‚С‹Р№ РјР°СЃСЃРёРІ: "+Arrays.toString(mrg.merge(arr, arrRand)));
 		
 		NewMerger nmrg = new NewMerger();
-		System.out.println("Слитый массив (улучшеный метод): "+Arrays.toString(nmrg.mergeNew(arr, arrRand)));
+		System.out.println("РЎР»РёС‚С‹Р№ РјР°СЃСЃРёРІ (СѓР»СѓС‡С€РµРЅС‹Р№ РјРµС‚РѕРґ): "+Arrays.toString(nmrg.mergeNew(arr, arrRand)));
 		
 		BubbleSort bs = new BubbleSort();
-		System.out.println("Сортированный массив (bubbleSort): "+Arrays.toString(bs.sort(arrRand)));
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ (bubbleSort): "+Arrays.toString(bs.sort(arrRand)));
 		
 		BubbleSortInvert bsInv = new BubbleSortInvert();
-		System.out.println("Сортированный массив (bubbleSort inverted): "+Arrays.toString(bsInv.sort(arrRand)));
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ (bubbleSort inverted): "+Arrays.toString(bsInv.sort(arrRand)));
 		
 		SelectionSort selSort = new SelectionSort();
-		System.out.println("Сортированный массив (selection sort): "+Arrays.toString(selSort.selectSort()));
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ (selection sort): "+Arrays.toString(selSort.selectSort()));
 		
 		InsertionSort ins = new InsertionSort();
-		System.out.println("Сортированный массив (insertion sort): "+Arrays.toString(ins.insSort()));
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ (insertion sort): "+Arrays.toString(ins.insSort()));
 		
-		System.out.println("Результат перемножения матриц:");
+		System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ РїРµСЂРµРјРЅРѕР¶РµРЅРёСЏ РјР°С‚СЂРёС†:");
 		MatrixMultiplection mul = new MatrixMultiplection();
 		mul.MatrixMul();
     }

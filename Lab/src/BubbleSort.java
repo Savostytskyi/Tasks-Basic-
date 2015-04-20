@@ -1,0 +1,16 @@
+
+public class BubbleSort {
+
+	public static int[] sort(int[] arr) {
+		for (int barrier = arr.length - 1; barrier >= 0; barrier--) {
+			for (int index = 0; index < barrier; index++) {
+					if (arr[index] > arr[index + 1]) {
+						int tmp = arr[index];
+						arr[index] = arr[index + 1];
+						arr[index + 1] = tmp;
+					}
+			}
+		}
+		 return arr;
+	}
+}
